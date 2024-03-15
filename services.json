@@ -1,0 +1,12 @@
+{
+    "URL Shortener": {
+        "image": "/Images/3DBlue.png",
+        "link": "https://shortener.wall-y.ca",
+        "description": "URL Shortener (As the name implies) will allow you to shorten your hyperlinks into something smaller, more compact, and cleaner."
+    },
+    "WallBin": {
+        "image": "/Images/WallBinLogo.png",
+        "link": "https://bin.wall-y.ca/",
+        "description": "This is a code pastebin website for developers to use to help them store, send, and share their code, projects and more!"
+    }
+}

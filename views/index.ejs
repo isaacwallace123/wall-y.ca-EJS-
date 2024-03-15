@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <%- include('partials/metaData') -%>
+
+    <body>
+        <%- include('partials/navbar') -%>
+
+        <main>
+            <div class="col">
+                <div class="fluid-container m-2 p-2 bg-light rounded">
+                    <% if(locals.page != null) { %>
+                        <% try { %>
+                            <%- include(`${locals.page}`) -%>
+                        <% } catch(err) { %>
+                            <%- include('partials/error') -%>
+                        <% } %>
+                    <% } %>
+                </div>
+            </div>
+        </main>
+
+        <%- include('partials/footer') -%>
+    </body>
+</html>

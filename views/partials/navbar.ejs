@@ -1,0 +1,15 @@
+<nav class="navbar navbar-expand-md sticky-top navbar-dark border-bottom">
+    <div class="container">
+        <a class="navbar-brand" href="#"><img src="/Images/WaterMark.png" alt="Logo" style="width:275px;"></a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar"><span class="navbar-toggler-icon"></span></button>
+        
+        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <% for(let page in locals.pages) { %>
+                    <li class="nav-item"><a class="nav-link text-uppercase text-center fw-bold" href="/load?page=<%= locals.pages[page] %>"><%- locals.pages[page].split(".")[0] -%></a></li>
+                <% } %>
+            </ul>
+        </div>
+    </div>
+</nav>

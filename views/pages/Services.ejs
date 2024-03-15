@@ -1,0 +1,17 @@
+<div class="container text-center my-0">
+    <p class="fw-bold" style="font-size: 50px">AVAILABLE SERVICES</p>
+    <p class="fw-bold">Currently, We Have A Very Small Selection Of Services Available. But Please Be Assured That We Are Working Hard On Creating More Services For You All To Use!</p>
+</div>
+
+<div class="fluid-container my-0">
+    <div class="row row-cols-1 row-cols-lg-2 row-cols-lg-4 py-5 justify-content-center gap-3">
+        <% for(let service in locals.services) { %>
+            <div class="col text-center rounded p-2 pb-3 shadow-lg service">
+                <img src="<%= locals.services[service].image %>" class="img-fluid mx-auto d-block" alt="Wall-Y.ca" style="width:40%;"></img>
+                <h3 class="fw-bold"><%= service %></h2>
+                <p><%= locals.services[service].description %></p>
+                <a href="<%= locals.services[service].link %>" class="btn btn-dark">Visit Site</a>
+            </div>
+        <% } %>
+    </div>
+</div>

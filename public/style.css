@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Work Sans', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+nav {
+    background-color: #191c1f;
+}
+
+main {
+    overflow-x: hidden;
+}
+
+.service {
+    background-color: rgb(240, 240, 240);
+    transition: 0.3s;
+}
+
+.service:hover {
+    color: white;
+    background-color: #191c1f;
+}
